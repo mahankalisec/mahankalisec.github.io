@@ -3,7 +3,7 @@ title: "Introduction to Cross-Site Scripting. You sure? know the basics of XSS"
 layout: post
 date: 2021-10-14 23:30
 image: https://mahankaliweb.me/assets/images/xss.png
-headerImage: false
+headerImage: true
 tag:
 - Cybersecurity
 - XSS
@@ -22,7 +22,7 @@ description: Introduction to Cross-Site Scripting. You sure? know the basics of 
 
 Hello folks, hope you are doing good. In this writeup we'll see the basics of xss,types of xss and why xss vulerability arises.before that lets us see a bit of its definition and types of it.
 
-# So,what is xss?
+### So,what is xss?
 
     Cross-site Scripting is a web vulnerability that is exploited by injecting malicious javascript code into the vulnerable web application inputs as well as the dynamic content that is being served to the user without validating. according to owasp top10 it is under injection category. There are three main types of XSS which are:-
 
@@ -34,7 +34,7 @@ In this writeup we'll see what reflected xss and stored xss are So let's deep ri
 
 ![preview](/assets/images/gettothepoint.jpg)
 
-### Reflected XSS
+## Reflected XSS
 
 As the name tells us it is reflected in the web page. So, here the javascript is injected into vulnerable parameter in the url and when you click this url you get a popup over the web page indicating that web application is vulnerable to Reflected xss. Here, the parameters may be visible or hidden based on application.
 
@@ -44,7 +44,7 @@ Many of the people think Reflected Xss is just popping up boxes but, In reality 
 
 So, to prevent Reflected xss developers should encode the data which is being served by the web application irrespective of which user controllable data is. In general reflected xss are not harmful compared to stored xss. to exploit reflected xss you can input javascript code in search fields, form fields and hidden parameters that are not seen in the url but can be added to the request.
 
-### Stored XSS 
+## Stored XSS 
 
 Stored xss is same as Reflected xss but here the malicious code is being stored on server side which makes it high severity vulnerability.
 
