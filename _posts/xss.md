@@ -1,7 +1,7 @@
 ---
 title: "Introduction to Cross-Site Scripting. You sure? know the basics of XSS"
 layout: post
-date: 2021-10-14 22:00
+date: 2021-10-14 23:30
 image: https://mahankaliweb.me/assets/images/xss.png
 headerImage: false
 tag:
@@ -79,5 +79,5 @@ I will be writing another blog for exploitation and bypassing the protections pl
 Hope you enjoyed reading my writeup!
 
 You can find me on:
-Twitter: <https://twitter.com/M4H4NK4LI>
+- [] Twitter: <https://twitter.com/M4H4NK4LI>
 
