@@ -1,0 +1,83 @@
+---
+title: Introduction to Cross-Site Scripting. You sure? know the basics of XSS
+layout: post
+date: 2021-10-14 17:00
+image: https://galnagli.com/assets/images/IDOR_DOD.jpg
+headerImage: false
+tag:
+- Cybersecurity
+- XSS
+- Bug Bounty
+category: blog
+author: mahankali
+description: Introduction to Cross-Site Scripting. You sure? know the basics of XSS
+---
+
+
+**Cross-Site Scripting(XSS) is the most common vulnerability found in the wild**
+
+![preview](/assets/images/xss.png)
+
+## Introduction
+
+Hello folks, hope you are doing good. In this writeup we'll see the basics of xss,types of xss and why xss vulerability arises.before that lets us see a bit of its definition and types of it.
+
+# So,what is xss?
+
+    Cross-site Scripting is a web vulnerability that is exploited by injecting malicious javascript code into the vulnerable web application inputs as well as the dynamic content that is being served to the user without validating. according to owasp top10 it is under injection category. There are three main types of XSS which are:-
+
+    •Reflected xss
+    •Stored xss
+    •Dom xss
+
+In this writeup we'll see what reflected xss and stored xss are So let's deep right into it.
+
+![gettothepoint](assets/images/gettothepoint.png)
+
+### Reflected XSS
+
+As the name tells us it is reflected in the web page. So, here the javascript is injected into vulnerable parameter in the url and when you click this url you get a popup over the web page indicating that web application is vulnerable to Reflected xss. Here, the parameters may be visible or hidden based on application.
+
+Many of the people think Reflected Xss is just popping up boxes but, In reality the attacker can perform unintended actions which may be harmful to you. The attacker may steal your cookies, may steal your csrf tokens which may lead to account takeover if the website has not implemented proper security measures.
+
+![hacked](assets/images/hacked.png)
+
+So, to prevent Reflected xss developers should encode the data which is being served by the web application irrespective of which user controllable data is. In general reflected xss are not harmful compared to stored xss. to exploit reflected xss you can input javascript code in search fields, form fields and hidden parameters that are not seen in the url but can be added to the request.
+
+### Stored XSS 
+
+Stored xss is same as Reflected xss but here the malicious code is being stored on server side which makes it high severity vulnerability.
+
+![high_impact](assets/images/highimpact.png)
+
+Whenever the users clicks on the affected page the xss code will be executed. Here when the data is being passed through the request developers should validate the input data as well as encode the data while sending it to users.
+
+there are many mitigations available to developers to prevent xss. We'll see some of them which are widely used:
+• WAF's : web application firewall helps us to block malicious input before reaching the web server. these days waf's are really smart and can block many types of malicious code.
+
+• httponly: this header reduces the severity of stealing cookies by not letting javascript to access any of the cookies or tokens.
+
+• csp: content security policy also helps to reduce the severity and it is the last line of defence as it is a browser side complex mechanism.
+
+Despite being many protections, Attackers are still finding a way to bypass them. Below are some of the practical ways in which attacker can use against users:
+
+## practical scenarios
+
+• Impersonate the users by stealing cookies.
+• Bypassing Csrf protection as you can access csrf token using that make a post request to change the users information.
+• Content spoofing: you can litterally change the content of web page by modifying it, which can lead to pishing.
+• Read any data of the user you can even get their browser name version and what os are they using which further used to chain attacks.
+• If you want to make money you can inject ads into their main website, which has many visitors. 
+
+
+## Exploiting Reflected and Stored xss
+
+I will be writing another blog for exploitation and bypassing the protections placed. This is my first time writing a blog feel free to reach me on twitter if any mistake.
+
+![end](assets/images/end.png)
+
+Hope you enjoyed reading my writeup!
+
+You can find me on:
+Twitter: <https://twitter.com/M4H4NK4LI>
+
