@@ -32,7 +32,7 @@ Hello folks, hope you are doing good. In this writeup we'll see the basics of xs
 
 In this writeup we'll see what reflected xss and stored xss are So let's deep right into it.
 
-![preview](/assets/images/gettothepoint.png)
+![preview](/assets/images/gettothepoint.jpg)
 
 ### Reflected XSS
 
