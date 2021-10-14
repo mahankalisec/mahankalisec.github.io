@@ -1,7 +1,7 @@
 ---
-title: Introduction to Cross-Site Scripting. You sure? know the basics of XSS
+title: "Introduction to Cross-Site Scripting. You sure? know the basics of XSS"
 layout: post
-date: 2021-10-14 17:00
+date: 2021-10-14 22:00
 image: https://mahankaliweb.me/assets/images/xss.png
 headerImage: false
 tag:
@@ -16,7 +16,7 @@ description: Introduction to Cross-Site Scripting. You sure? know the basics of 
 
 **Cross-Site Scripting(XSS) is the most common vulnerability found in the wild**
 
-![preview](/assets/images/xss.png)
+![preview](https://mahankalisec/mahankalisec.github.io/tree/gh-pages/assets/images/xss.png)
 
 ## Introduction
 
@@ -32,7 +32,7 @@ Hello folks, hope you are doing good. In this writeup we'll see the basics of xs
 
 In this writeup we'll see what reflected xss and stored xss are So let's deep right into it.
 
-![preview](assets/images/gettothepoint.png)
+![preview](https://mahankalisec/mahankalisec.github.io/tree/gh-pages/assets/images/gettothepoint.png)
 
 ### Reflected XSS
 
@@ -40,7 +40,7 @@ As the name tells us it is reflected in the web page. So, here the javascript is
 
 Many of the people think Reflected Xss is just popping up boxes but, In reality the attacker can perform unintended actions which may be harmful to you. The attacker may steal your cookies, may steal your csrf tokens which may lead to account takeover if the website has not implemented proper security measures.
 
-![preview](assets/images/hacked.png)
+![preview](https://mahankalisec/mahankalisec.github.io/tree/gh-pages/assets/images/hacked.png)
 
 So, to prevent Reflected xss developers should encode the data which is being served by the web application irrespective of which user controllable data is. In general reflected xss are not harmful compared to stored xss. to exploit reflected xss you can input javascript code in search fields, form fields and hidden parameters that are not seen in the url but can be added to the request.
 
@@ -48,7 +48,7 @@ So, to prevent Reflected xss developers should encode the data which is being se
 
 Stored xss is same as Reflected xss but here the malicious code is being stored on server side which makes it high severity vulnerability.
 
-![preview](assets/images/highimpact.png)
+![preview](https://mahankalisec/mahankalisec.github.io/tree/gh-pages/assets/images/highimpact.png)
 
 Whenever the users clicks on the affected page the xss code will be executed. Here when the data is being passed through the request developers should validate the input data as well as encode the data while sending it to users.
 
@@ -74,7 +74,7 @@ Despite being many protections, Attackers are still finding a way to bypass them
 
 I will be writing another blog for exploitation and bypassing the protections placed. This is my first time writing a blog feel free to reach me on twitter if any mistake.
 
-![preview](assets/images/end.png)
+![preview]https://mahankalisec/mahankalisec.github.io/tree/gh-pages/(assets/images/end.png)
 
 Hope you enjoyed reading my writeup!
 
