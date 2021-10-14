@@ -2,7 +2,7 @@
 title: Introduction to Cross-Site Scripting. You sure? know the basics of XSS
 layout: post
 date: 2021-10-14 17:00
-image: https://galnagli.com/assets/images/IDOR_DOD.jpg
+image: https://mahankaliweb.me/assets/images/xss.png
 headerImage: false
 tag:
 - Cybersecurity
