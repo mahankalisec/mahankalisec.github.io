@@ -14,7 +14,7 @@ description: Introduction to Cross-Site Scripting. You sure? know the basics of 
 ---
 
 
-**Cross-Site Scripting(XSS) is the most common vulnerability found in the wild**
+Cross-Site Scripting(XSS) is the most common vulnerability found in the wild
 
 ![preview](/assets/images/xss.png)
 
@@ -64,9 +64,13 @@ Despite being many protections, Attackers are still finding a way to bypass them
 ## practical scenarios
 
 • Impersonate the users by stealing cookies.
+
 • Bypassing Csrf protection as you can access csrf token using that make a post request to change the users information.
+
 • Content spoofing: you can litterally change the content of web page by modifying it, which can lead to pishing.
+
 • Read any data of the user you can even get their browser name version and what os are they using which further used to chain attacks.
+
 • If you want to make money you can inject ads into their main website, which has many visitors. 
 
 
